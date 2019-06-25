@@ -1,0 +1,36 @@
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+
+
+.person-container {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  min-width: 200px;
+  align-items: center;
+  margin: 5px auto;
+  padding: 2%;
+  border-radius: 5%;
+  background-color: rgba(255,255,255,0.95)
+}
+
+.person-photo {
+  height: 250px;
+  width: 225px;
+  border-radius: 5%;
+}
+
+.person-name {
+  color: #FF6347;
+}
+
+.person-quote {
+  font-style: italic;
+}
+
+.person-superlative {
+  color: #6495EC;
+  font-weight: 800;
+}

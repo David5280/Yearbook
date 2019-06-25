@@ -2,6 +2,15 @@ import React from 'react';
 import Person from './Person';
 import './Cohort.css';
 
-// COHORT COMPONENT CODE GOES HERE
 
-export default Cohort;
+
+export class Cohort extends React.Component {
+  render() {
+    return this.props.peopleData.map((person) => (
+      <Person id={person.id} image={person.photo} name={person.name} quote={person.quote} superlative={person.superlative} />
+    ))
+  }
+}
+
+export default Cohort
+
