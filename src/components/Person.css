@@ -11,7 +11,7 @@
   min-width: 200px;
   align-items: center;
   margin: 5px auto;
-  padding: 2%;
+  padding: 20px;
   border-radius: 5%;
   background-color: rgba(255,255,255,0.95)
 }
@@ -33,4 +33,8 @@
 .person-superlative {
   color: #6495EC;
   font-weight: 800;
+}
+
+.person-text {
+  margin: 10px;
 }
