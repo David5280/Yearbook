@@ -14,8 +14,6 @@ class App extends Component {
   }
 
   addPerson = (newPerson) => {
-    newPerson.category === 'student' ? 
-    this.setState({ [newPerson.category]: [...this.state[newPerson.category], newPerson] }): 
     this.setState({[newPerson.category]: [...this.state[newPerson.category], newPerson]});
   }
 
@@ -25,14 +23,14 @@ class App extends Component {
       <header className="App-header">
         <h1>Turing Yearbook</h1>
       </header>
-      <Form addPerson={this.addPerson}/>
+      <Form addPerson={this.addPerson} />
         <h2>Staff</h2>
           <div className='cohort-container'> 
-            <Cohort peopleData={ this.state.staff }/>
+            <Cohort peopleData={ this.state.staff } />
           </div>
         <h2>Students</h2>
           <div className='cohort-container'> 
-            <Cohort peopleData={ this.state.students }/>
+            <Cohort peopleData={ this.state.students } />
           </div>
       </div>
     );
