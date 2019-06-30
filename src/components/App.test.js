@@ -9,4 +9,18 @@ describe('App', () => {
     ReactDOM.render(<App />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
+  it('should add a new person', () => {
+    const wrapper = shallow(
+      <App />
+    )
+    const newPerson = {
+      name: 'Dave',
+      Quote: 'Suppp',
+      superlative: 'Most likely to be chilllll',
+      category: 'students'
+    }
+    expect(wrapper.state().students.length).toEqual(26)
+    wrapper.instance().addPerson(newPerson)
+    expect(wrapper.state().students.length).toEqual(27)
+  })
 })

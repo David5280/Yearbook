@@ -19,7 +19,6 @@ class Form extends React.Component {
   submitNewPerson = (e) => {
     e.preventDefault();
     const newPerson = {...this.state, id: Date.now(), photo: 'https://placekitten.com/200/300'};
-    console.log(newPerson);
     this.props.addPerson(newPerson)
     this.resetInputs();
   }
@@ -36,7 +35,7 @@ class Form extends React.Component {
           type='text'
           name='name'
           placeholder='Name...'
-          className='new-person-input'
+          className='new-person-input name-input'
           value={this.state.name}
           onChange={this.handleChange}
           />
@@ -67,7 +66,7 @@ class Form extends React.Component {
           <option value="staff">Staff</option>
         </select>
         <button 
-          className='new-person-input'
+          className='new-person-input new-person-submit'
           onClick={this.submitNewPerson}>
             Add to Yearbook
         </button>

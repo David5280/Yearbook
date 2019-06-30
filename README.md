@@ -1,26 +1,13 @@
 # Turing Yearbook
+## By David Engel
 
-This application was built with `create-react-app`.
+This is my first solo project in module 3 at the Turing School of Software & Design.  The assignment was to use React to create a simple yearbook application that pulls information from a database and displays them on the DOM.  Since this is our first time using React, the objectives of the assignment were to:
 
-### Set Up
+1)  Write squeaky clean, well refactored code using ES6 syntax.
+2)  Learn to pass information between components using props.
+3)  Learn to write readable JSX (render methods/return statements should be clean and simple).
 
-Clone down this repo.
-
-Because you don't want to be pushing your updates to this boilerplate repository, we're going to have to do a few things to get set up with your own repository.
-
-1. On GitHub, create a new, empty repository and name it something like 'turing-yearbook'.
-2. Update the current remote (called "origin") so that it points at the URL of the repository you just created on GitHub. Read how to do this [here](https://help.github.com/en/articles/changing-a-remotes-url).
-3. Once you've updated the remote, you should run `npm install`, commit, and then push your initial commit to your personal repository. You will need to use the `-u` flag when you push (like this: `git push -u origin master`).
-4. Run `npm start` to start up your React server. (You will see errors!)
-
-### Expectations / Rules
-
-Build a React App that displays Turing front-end staff!
-
-![turing yearbook screenshot](https://raw.githubusercontent.com/turingschool-examples/yearbook/master/screenshot.png)
-
-We want to see good commit habits - atomic commits that log small, focused changesets.
-
+Here are the full list of requirments for this project:
 
 ### Iteration 0
 
@@ -47,3 +34,15 @@ In the `yearbook-data.js` file, un-comment-out the "students" information. Get t
 ### Iteration 4 (extension - do not attempt until iterations 0 - 3 are completed)
 
 Create a controlled component that allows people to add a new student.
+
+### Set Up
+
+Clone down this repo.
+
+Navigate to the root directory in your terminal and run "npm start"
+
+Experiment with the form and check out all of the yearbook enteries!
+
+
+
+
